@@ -43,10 +43,13 @@ jobs:
       
       - name: Inspect built CSS
         run: |
-          echo "== public/css =="
-          ls -l public/css || true
-          echo "== look for link tag in HTML =="
-          sed -n '1,120p' public/index.html | sed -n '/<link/Ip' || true
+          echo "== CSS files in public/css =="
+          ls -lh public/css || true
+          echo "== First 20 lines of main.css (if it exists) =="
+          head -n 20 public/css/main*.css || true
+          echo "== Link tags from index.html =="
+          grep -i '<link' public/index.html || true
+
 
 
       - name: Add CNAME
