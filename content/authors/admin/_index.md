@@ -46,7 +46,7 @@ profiles:
   #   url: https://scholar.google.com/citations?user=alexjohnson
   # - icon: academicons/orcid
   #   url: https://orcid.org/0000-0002-1825-0097
-  - icon: font-awesome-brands/kaggle
+  - icon: custom/kaggle
     url: https://www.kaggle.com/jithendrapuppala
 
 interests:
