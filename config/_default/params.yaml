@@ -3,6 +3,11 @@
 # Documentation: https://docs.hugoblox.com/
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
+# Theme
+theme:
+  default: system   # or "dark" if you want default dark
+  toggle: true
+
 # Appearance
 appearance:
   mode: dark
