@@ -1,11 +1,63 @@
-- uses: actions/setup-node@v4
-  with:
-    node-version: '20'
-- run: npm ci
-- uses: peaceiris/actions-hugo@v3
-  with:
-    hugo-version: '0.125.7'
-    extended: true
-- run: hugo --minify
-  env:
-    HUGO_TAILWINDCSS_BINARY: node_modules/.bin/tailwindcss
+name: Build & Deploy Hugo to GitHub Pages
+
+on:
+  push:
+    branches: ["main"]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # Install Node to build Tailwind v3 from package-lock.json
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install Node deps
+        run: npm ci
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          # Use an extended build
+          hugo-version: "0.125.7"
+          extended: true
+
+      - name: Build site
+        run: hugo --minify
+        env:
+          # Pin the local Tailwind v3 binary so Hugo doesn't try v4
+          HUGO_TAILWINDCSS_BINARY: node_modules/.bin/tailwindcss
+
+      # Add CNAME so the custom domain “sticks” in the built output
+      - name: Add CNAME
+        run: echo "jithendra.com" > public/CNAME
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./public
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
