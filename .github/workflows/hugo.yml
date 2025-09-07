@@ -49,8 +49,13 @@ jobs:
           head -n 20 public/css/main*.css || true
           echo "== Link tags from index.html =="
           grep -i '<link' public/index.html || true
-
-
+          
+      - name: Inspect built assets
+        run: |
+          echo "== public/js =="
+          ls -lh public/js || true
+          echo "== script tags in index.html =="
+          grep -i "<script" public/index.html || true
 
       - name: Add CNAME
         run: echo "jithendra.com" > public/CNAME
