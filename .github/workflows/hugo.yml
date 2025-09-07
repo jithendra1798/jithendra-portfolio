@@ -34,7 +34,7 @@ jobs:
           hugo mod tidy
 
       - name: Tailwind self-check
-        run: node_modules/.bin/tailwindcss --version
+        run: node -p "require('./node_modules/tailwindcss/package.json').version"
 
       - name: Build site
         run: hugo --minify
