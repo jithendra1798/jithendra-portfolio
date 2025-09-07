@@ -2,6 +2,3 @@ baseURL: "https://jithendra.com/"   # <-- no www
 canonifyURLs: true
 build:
   writeStats: true
-theme:
-  default: system
-  toggle: true
