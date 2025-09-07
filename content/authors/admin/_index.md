@@ -83,20 +83,20 @@ education:
     #   Minored in Mathematics. President of AI Club.
 
 work:
-  - position: Senior AI Research Scientist
-    company_name: Meta AI
-    company_url: 'https://ai.meta.com/'
+  - position: Data Scientist
+    company_name: Jio Platforms Limite
+    company_url: 'https://www.jio.com/'
     company_logo: ''
-    date_start: 2020-01-01
-    date_end: ''
+    date_start: 2023-06-12
+    date_end: '2026-07-08'
     summary: |2-
       Leading research on multimodal AI systems. Contributed to Llama 2 and other open-source models. 50+ citations in 3 years.
-  - position: AI Research Intern
-    company_name: OpenAI
-    company_url: 'https://openai.com/'
+  - position: Advanced Application Engineering Analyst Intern
+    company_name: Accenture
+    company_url: 'https://accenture.com/'
     company_logo: ''
-    date_start: 2019-06-01
-    date_end: 2019-12-31
+    date_start: 2022-06-05
+    date_end: 2022-07-29
     summary: |
       Worked on GPT-3 scaling. Co-authored paper on prompt engineering.
 
