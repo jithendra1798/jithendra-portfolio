@@ -37,6 +37,14 @@ jobs:
         run: hugo --minify
         env:
           HUGO_TAILWINDCSS_BINARY: node_modules/.bin/tailwindcss
+      
+      - name: Inspect built CSS
+        run: |
+          echo "== public/css =="
+          ls -l public/css || true
+          echo "== look for link tag in HTML =="
+          sed -n '1,120p' public/index.html | sed -n '/<link/Ip' || true
+
 
       - name: Add CNAME
         run: echo "jithendra.com" > public/CNAME
