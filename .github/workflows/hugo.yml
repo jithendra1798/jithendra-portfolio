@@ -33,7 +33,7 @@ jobs:
         uses: peaceiris/actions-hugo@v3
         with:
           # Use an extended build
-          hugo-version: "0.125.7"
+          hugo-version: "0.149.1"
           extended: true
 
       - name: Build site
