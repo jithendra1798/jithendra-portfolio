@@ -23,11 +23,11 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: Data Scientist
+role: M.S. Computer Science | Data Scientist
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
-  - name: Jio Platforms Limited
+  - name: New York University
     url: https://www.jio.com/
 
 # Social network links
@@ -170,4 +170,4 @@ awards:
       Recognized for contributions to scaling laws in deep learning.
 ---
 
-Hi! I am Jithendra Puppala, a graduate student pursuing my M.S. in Computer Science at New York University (Fall 2025–Spring 2027). I am deeply passionate about Data Science, Machine Learning, and Computer Vision, and I thrive at the intersection of research, real-world impact, and scalable systems.
+Hi! I am Jithendra Puppala, a  Data Scientist with 2+ years of industry experience at Jio Platforms, developing and deploying ML models that improved precision/recall by 25%+ and scaled to 150K+ IoT devices. Currently pursuing an M.S. in Computer Science at NYU, focusing on Machine Learning, Computer Vision, and Data Science. Seeking a Summer 2026 Data Science/AI/ML internship to apply expertise in modeling, deployment, and scalable analytics.

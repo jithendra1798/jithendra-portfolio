@@ -1,1 +1,3 @@
+npm run dev
+
 HUGO_TAILWINDCSS_BINARY=./node_modules/.bin/tailwindcss hugo server --disableFastRender -D

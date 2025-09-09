@@ -1,3 +1,82 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* =========================
+   Site polish overrides
+   ========================= */
+
+/* Typography + reading rhythm */
+@layer utilities {
+  html body .prose { max-width: 80ch; }
+  html body .prose :where(p){ line-height:1.75; }
+  html body .prose :where(ul,ol){ margin-top:.75rem; margin-bottom:.75rem; }
+  html body .prose :where(li){ margin-top:.25rem; margin-bottom:.25rem; }
+}
+
+/* Layout / spacing / containers */
+@layer utilities {
+  /* Compact global section spacing */
+  html body .home-section, 
+  html body section {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  /* Wider containers on desktop */
+  html body .container,
+  html body .article-container,
+  html body .home-section .container {
+    max-width: 1200px;      /* adjust 1120–1280px if you like */
+    margin-inline: auto;
+    padding-inline: 1rem;
+  }
+}
+
+/* Navbar polish */
+@layer utilities {
+  html body header#wc-header .navbar {
+    padding-block: 0.4rem;
+    box-shadow: 0 1px 0 rgba(0,0,0,.06);
+    backdrop-filter: saturate(1.1) blur(6px);
+    -webkit-backdrop-filter: saturate(1.1) blur(6px);
+  }
+  html body header#wc-header .navbar .nav-link {
+    padding: .25rem .6rem;
+    font-weight: 500;
+  }
+  html body header#wc-header .navbar-brand img {
+    height: 28px;
+  }
+}
+
+/* Cards & meta */
+@layer utilities {
+  html body .card, 
+  html body .hb-card, 
+  html body .hb-featured {
+    border-radius: .75rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06);
+  }
+  html body footer, 
+  html body .post-meta, 
+  html body .article-tags {
+    font-size: .9375rem;
+  }
+  html body .prose :where(h2){ margin-top: 2rem; margin-bottom: .8rem; }
+  html body .prose :where(h3){ margin-top: 1.5rem; margin-bottom: .6rem; }
+}
+
+/* Slightly larger body text without blowing up headings */
+@layer utilities {
+  html body .prose :where(p,li){ font-size: 1.02rem; }
+}
+
+/* Dark mode shadow tweak */
+@layer utilities {
+  html body.dark .card, 
+  html body.dark .hb-card, 
+  html body.dark .hb-featured {
+    box-shadow: 0 1px 3px rgba(0,0,0,.3);
+  }
+}
