@@ -5,7 +5,7 @@
 
 # Theme
 theme:
-  default: system   # or "dark" if you want default dark
+  default: dark   # or "dark" if you want default dark
   toggle: true
 
 # Appearance
