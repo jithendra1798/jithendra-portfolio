@@ -1,4 +1,6 @@
 baseURL: "https://jithendra.com/"   # <-- no www
-canonifyURLs: true
+canonifyURLs: false      # don’t force absolute URLs
+relativeURLs: true       # generate /js/... instead of https://www...
+
 build:
   writeStats: true
