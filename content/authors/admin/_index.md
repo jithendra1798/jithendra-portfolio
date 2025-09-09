@@ -50,10 +50,12 @@ profiles:
     url: https://www.kaggle.com/jithendrapuppala
 
 interests:
-  - Large Language Models
   - Computer Vision
+  - Machine Learning
+  - Data Science
   - Reinforcement Learning
   - AI Ethics
+  - Large Language Models
 
 education:
   # - area: PhD Computer Science (AI Focus)
@@ -84,7 +86,7 @@ education:
 
 work:
   - position: Data Scientist
-    company_name: Jio Platforms Limite
+    company_name: Jio Platforms Limited
     company_url: 'https://www.jio.com/'
     company_logo: ''
     date_start: 2023-06-12
