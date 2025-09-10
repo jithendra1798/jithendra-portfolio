@@ -92,7 +92,7 @@ work:
     date_start: 2023-06-12
     date_end: '2026-07-08'
     summary: |2-
-      Leading research on multimodal AI systems. Contributed to Llama 2 and other open-source models. 50+ citations in 3 years.
+      Improved the cattle heat detection precision from 68% to 91% and recall from 76% to 95% by developing ML models from scratch.
   - position: Advanced Application Engineering Analyst Intern
     company_name: Accenture
     company_url: 'https://accenture.com/'
@@ -100,7 +100,7 @@ work:
     date_start: 2022-06-05
     date_end: 2022-07-29
     summary: |
-      Worked on GPT-3 scaling. Co-authored paper on prompt engineering.
+      Conducted a comprehensive observability study to improve monitoring, performance, and reliability across enterprise applications.
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
@@ -119,27 +119,29 @@ skills:
         description: ''
         percent: 85
         icon: cloud
-  - name: Hobbies
-    color: '#eeac02'
-    color_border: '#f0bf23'
-    items:
-      - name: Hiking in the Rockies
-        description: ''
-        percent: 80
-        icon: person-simple-walk
-      - name: Building Custom PCs
-        description: ''
-        percent: 90
-        icon: cpu-chip
-      - name: Sci-Fi Reading
-        description: ''
-        percent: 70
-        icon: book-open
+  # - name: Hobbies
+  #   color: '#eeac02'
+  #   color_border: '#f0bf23'
+  #   items:
+  #     - name: Hiking in the Rockies
+  #       description: ''
+  #       percent: 80
+  #       icon: person-simple-walk
+  #     - name: Building Custom PCs
+  #       description: ''
+  #       percent: 90
+  #       icon: cpu-chip
+  #     - name: Sci-Fi Reading
+  #       description: ''
+  #       percent: 70
+  #       icon: book-open
 
 languages:
   - name: English
     percent: 100
-  - name: Spanish
+  - name: Telugu
+    percent: 100
+  - name: Hindi
     percent: 50
 
 # Awards.
