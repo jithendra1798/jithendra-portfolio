@@ -1,15 +1,16 @@
 ---
-title: Learn Python
-summary: Easily learn Python in 10 minutes!
+title: Python
+summary: Worked as a Python Tutor for Python course at IIT Madras BS Degree in Data Science
 date: 2023-10-24
 type: docs
 math: false
 tags:
   - Python
-image:
-  caption: 'Embed rich media such as videos and LaTeX math'
+# image:
+#   caption: 'Embed rich media such as videos and LaTeX math'
 ---
-
+Worked as a Python Tutor for Python course at IIT Madras BS Degree in Data Science 
+<!-- 
 [Hugo Blox Builder](https://hugoblox.com) is designed to give technical content creators a seamless experience. You can focus on the content and the Hugo Blox Builder which this template is built upon handles the rest.
 
 **Embed videos, podcasts, code, LaTeX math, and even test students!**
@@ -34,9 +35,9 @@ Teach your course by sharing videos with your students. Choose from one of the f
 
 Videos may be added to a page by either placing them in your `assets/media/` media library or in your [page's folder](https://gohugo.io/content-management/page-bundles/), and then embedding them with the _video_ shortcode:
 
-    {{</* video src="my_video.mp4" controls="yes" */>}}
+    {{</* video src="my_video.mp4" controls="yes" */>}} -->
 
-## Podcast
+<!-- ## Podcast
 
 You can add a podcast or music to a page by placing the MP3 file in the page's folder or the media library folder and then embedding the audio on your page with the _audio_ shortcode:
 
@@ -137,4 +138,4 @@ renders as
 
 {{< icon name="python" >}} Python
 
-## Did you find this page helpful? Consider sharing it 🙌
+## Did you find this page helpful? Consider sharing it 🙌 -->

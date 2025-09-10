@@ -1,15 +1,15 @@
 ---
-title: scikit-learn
-date: 2023-10-26
+title: Frontend for Military Management
+date: 2021-10-26
 links:
   - type: site
-    url: https://github.com/scikit-learn/scikit-learn
+    url: https://jithendra1798.github.io/Militry-Management/index.html
 tags:
   - Hugo
   - HugoBlox
   - Markdown
 ---
 
-scikit-learn is a Python module for machine learning built on top of SciPy and is distributed under the 3-Clause BSD license.
+This is a frontend website for Military Management operations.
 
 <!--more-->
