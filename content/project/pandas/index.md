@@ -1,15 +1,15 @@
 ---
-title: Pandas
-date: 2023-10-26
+title: Library Management
+date: 2021-12-26
 links:
   - type: site
-    url: https://github.com/pandas-dev/pandas
+    url: https://github.com/jithendra1798/SE-Project
 tags:
   - Hugo
   - HugoBlox
   - Markdown
 ---
 
-Flexible and powerful data analysis / manipulation library for Python, providing labeled data structures.
+Web-based system with Django, featuring book search, issue tracking, user authentication, and admin dashboard controls.
 
 <!--more-->
